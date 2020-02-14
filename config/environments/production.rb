@@ -1,13 +1,13 @@
 Rails.application.configure do
    
   # devise says to define default url
-  config.action_mailer.default_url_options = { :host => 'secure.simple-milia-app.com', :protocol => 'https' }
+  config.action_mailer.default_url_options = { :host => 'project-management14.herokuapp.com', :protocol => 'https' }
 
   ActionMailer::Base.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
-    :port           => '587',
+    :port           => 25,
     :authentication => :plain,
     :user_name      => ENV['SENDGRID_USERNAME'],
     :password       => ENV['SENDGRID_PASSWORD'],
@@ -25,8 +25,6 @@ Rails.application.configure do
   config.eager_load = true
 
   config.action_mailer.delivery_method = :smtp
-
-  config.action_mailer.default_url_options = { :host => 'saas-proj-management.herokuapp.com', :protocol => 'https'}
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false

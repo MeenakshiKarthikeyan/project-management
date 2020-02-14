@@ -1,0 +1,2015 @@
+Started GET "/" for ::1 at 2020-02-11 08:13:18 +0530
+  
+ActiveRecord::NoDatabaseError (FATAL:  role "railsdata" does not exist
+):
+  
+activerecord (5.2.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:830:in `new_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:874:in `checkout_new_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `try_to_checkout_new_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:814:in `acquire_connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:538:in `checkout'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.4.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1033:in `retrieve_connection'
+activerecord (5.2.4.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.4.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.4.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (1285.6ms)[0m  [1m[35mCREATE DATABASE "saas-project-management_development" ENCODING = 'unicode'[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "saas-project-management_development" ENCODING = 'unicode'[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (1136.3ms)[0m  [1m[35mCREATE DATABASE "saas-project-management_test" ENCODING = 'unicode'[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (103.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (101.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(738670611444274740)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-02-11 02:46:20.399017"], ["updated_at", "2020-02-11 02:46:20.399017"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (37.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(738670611444274740)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(738670611444274740)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (10.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Migrating to DeviseCreateUsers (20200213150131)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (369.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "confirmation_token" character varying, "confirmed_at" timestamp, "confirmation_sent_at" timestamp, "unconfirmed_email" character varying, "skip_confirm_change_password" boolean DEFAULT FALSE, "tenant_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200213150131_devise_create_users.rb:5
+  [1m[35m (47.3ms)[0m  [1m[35mCREATE  INDEX  "index_users_on_tenant_id" ON "users"  ("tenant_id")[0m
+  ↳ db/migrate/20200213150131_devise_create_users.rb:5
+  [1m[35m (53.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20200213150131_devise_create_users.rb:43
+  [1m[35m (67.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20200213150131_devise_create_users.rb:44
+  [1m[35m (44.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_confirmation_token" ON "users"  ("confirmation_token")[0m
+  ↳ db/migrate/20200213150131_devise_create_users.rb:45
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200213150131"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (16.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Migrating to AddSessionsTable (20200213150133)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (112.3ms)[0m  [1m[35mCREATE TABLE "sessions" ("id" bigserial primary key, "session_id" character varying NOT NULL, "data" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200213150133_add_sessions_table.rb:3
+  [1m[35m (336.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_sessions_on_session_id" ON "sessions"  ("session_id")[0m
+  ↳ db/migrate/20200213150133_add_sessions_table.rb:9
+  [1m[35m (64.7ms)[0m  [1m[35mCREATE  INDEX  "index_sessions_on_updated_at" ON "sessions"  ("updated_at")[0m
+  ↳ db/migrate/20200213150133_add_sessions_table.rb:10
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200213150133"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (17.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Migrating to CreateTenants (20200213150134)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (967.3ms)[0m  [1m[35mCREATE TABLE "tenants" ("id" bigserial primary key, "tenant_id" bigint, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_19e3860bba"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+)[0m
+  ↳ db/migrate/20200213150134_create_tenants.rb:3
+  [1m[35m (62.7ms)[0m  [1m[35mCREATE  INDEX  "index_tenants_on_tenant_id" ON "tenants"  ("tenant_id")[0m
+  ↳ db/migrate/20200213150134_create_tenants.rb:3
+  [1m[35m (89.6ms)[0m  [1m[35mCREATE  INDEX  "index_tenants_on_name" ON "tenants"  ("name")[0m
+  ↳ db/migrate/20200213150134_create_tenants.rb:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200213150134"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (16.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Migrating to CreateTenantsUsersJoinTable (20200213150135)
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "tenants_users" ("tenant_id" bigint NOT NULL, "user_id" bigint NOT NULL)[0m
+  ↳ db/migrate/20200213150135_create_tenants_users_join_table.rb:3
+  [1m[35m (77.9ms)[0m  [1m[35mCREATE  INDEX  "index_tenants_users_on_tenant_id_and_user_id" ON "tenants_users"  ("tenant_id", "user_id")[0m
+  ↳ db/migrate/20200213150135_create_tenants_users_join_table.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200213150135"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (20.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Migrating to CreateMembers (20200213150136)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (170.8ms)[0m  [1m[35mCREATE TABLE "members" ("id" bigserial primary key, "tenant_id" bigint, "user_id" bigint, "first_name" character varying, "last_name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_4e4771d44b"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+, CONSTRAINT "fk_rails_2e88fb7ce9"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  ↳ db/migrate/20200213150136_create_members.rb:3
+  [1m[35m (65.6ms)[0m  [1m[35mCREATE  INDEX  "index_members_on_tenant_id" ON "members"  ("tenant_id")[0m
+  ↳ db/migrate/20200213150136_create_members.rb:3
+  [1m[35m (59.1ms)[0m  [1m[35mCREATE  INDEX  "index_members_on_user_id" ON "members"  ("user_id")[0m
+  ↳ db/migrate/20200213150136_create_members.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200213150136"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (13.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (58.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(738670611444274740)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Started GET "/" for ::1 at 2020-02-13 21:57:52 +0530
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 870ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'devise_bootstrap_views' with type 'text/css'
+Checked in these paths: 
+  /home/railsdata/Documents/ruby_projects/saas-project-management/app/assets/config
+  /home/railsdata/Documents/ruby_projects/saas-project-management/app/assets/images
+  /home/railsdata/Documents/ruby_projects/saas-project-management/app/assets/javascripts
+  /home/railsdata/Documents/ruby_projects/saas-project-management/app/assets/stylesheets
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/actioncable-5.2.4.1/lib/assets/compiled
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activestorage-5.2.4.1/app/assets/javascripts
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/actionview-5.2.4.1/lib/assets/compiled
+  /home/railsdata/Documents/ruby_projects/saas-project-management/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "SaasProjectManagement" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+  
+app/assets/stylesheets/application.css:13
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___1550721772735844011_47000471153880'
+Started GET "/" for ::1 at 2020-02-13 21:59:36 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 1232ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "apple-touch-icon-144x144-precomposed.png" is not present in the asset pipeline.):
+    11: 
+    12:     <!-- For third-generation iPad with high-resolution Retina display: -->
+    13:     <!-- Size should be 144 x 144 pixels -->
+    14:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+    15: 
+    16:     <!-- For iPhone with high-resolution Retina display: -->
+    17:     <!-- Size should be 114 x 114 pixels -->
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1550721772735844011_70038669300160'
+Started GET "/" for ::1 at 2020-02-13 22:00:33 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 150ms (Views: 146.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 22:11:34 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 22:13:34 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 369ms (Views: 367.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 22:13:54 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 22:14:53 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 22:15:35 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 45ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 22:16:09 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 22:16:43 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 22:18:49 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 494ms (Views: 489.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=free" for ::1 at 2020-02-13 22:19:24 +0530
+Processing by Milia::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"free"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (162.2ms)
+Completed 200 OK in 361ms (Views: 190.3ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/users/sign_up?plan=premium" for ::1 at 2020-02-13 22:19:29 +0530
+Processing by Milia::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"premium"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-13 22:19:34 +0530
+Processing by Milia::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-02-13 22:21:23 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 159ms (Views: 156.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(738670611444274740)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Migrating to AddPlanToTenants (20200213165347)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "tenants" ADD "plan" character varying[0m
+  ↳ db/migrate/20200213165347_add_plan_to_tenants.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200213165347"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (313.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(738670611444274740)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Started GET "/" for ::1 at 2020-02-13 23:01:16 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 145ms (Views: 137.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=free" for ::1 at 2020-02-13 23:01:18 +0530
+Processing by Milia::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"free"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 92ms (Views: 63.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/users/sign_up?plan=free" for ::1 at 2020-02-13 23:03:52 +0530
+Processing by Milia::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"free"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 124ms (Views: 99.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 15:02:23 +0530
+  [1m[35m (47.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 145ms (Views: 129.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=free" for ::1 at 2020-02-14 15:02:27 +0530
+Processing by Milia::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"free"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 171ms (Views: 82.6ms | ActiveRecord: 58.5ms)
+
+
+Started POST "/users" for ::1 at 2020-02-14 15:02:57 +0530
+Processing by Milia::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LqglTkMveynBHI04rLmSyHqfmoLvXAH9GmwQsEIaOmVeb0gOxQQRhRoTymyz8k7YqwjyCYb8G2r8Q3cLyri+HQ==", "user"=>{"email"=>"meenakshi.ravichandran@railsdata.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "tenant"=>{"name"=>"Indium", "plan"=>"free"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+  [1m[36mTenant Exists (31.5ms)[0m  [1m[34mSELECT  1 AS one FROM "tenants" WHERE "tenants"."name" = $1 LIMIT $2[0m  [["name", "Indium"], ["LIMIT", 1]]
+  ↳ app/models/tenant.rb:17
+  [1m[36mTenant Create (36.6ms)[0m  [1m[32mINSERT INTO "tenants" ("name", "created_at", "updated_at", "plan") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Indium"], ["created_at", "2020-02-14 09:32:58.953287"], ["updated_at", "2020-02-14 09:32:58.953287"], ["plan", "free"]]
+  ↳ app/models/tenant.rb:17
+MILIA >>>>> [change tenant] new: 1	old: %
+  [1m[36mUser Exists (58.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "meenakshi.ravichandran@railsdata.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+  [1m[36mUser Create (18.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "skip_confirm_change_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "meenakshi.ravichandran@railsdata.com"], ["encrypted_password", "$2a$11$K26idjKmZS7kCPMY7ks0COLt/gdTyBntI9lAG.eQrvgCLQaSD2nfW"], ["confirmation_token", "2WvxHvxEKBVQSp-B2s5z"], ["confirmation_sent_at", "2020-02-14 09:32:59.186706"], ["skip_confirm_change_password", true], ["created_at", "2020-02-14 09:32:59.186540"], ["updated_at", "2020-02-14 09:32:59.186540"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+MILIA >>>>> [register user/org] devise: signup user success - 
+Redirected to http://localhost:3000/
+MILIA >>>>> [register user/org] signup user/tenant success - 
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+Completed 500 Internal Server Error in 1420ms (ActiveRecord: 154.3ms)
+
+
+  
+NoMethodError (undefined method `create_member' for #<User:0x00007fe98c2a4a40>
+Did you mean?  created_at):
+  
+app/models/member.rb:13:in `create_new_member'
+app/models/member.rb:17:in `create_org_admin'
+app/models/tenant.rb:44:in `tenant_signup'
+Started POST "/users" for ::1 at 2020-02-14 15:05:16 +0530
+Processing by Milia::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LqglTkMveynBHI04rLmSyHqfmoLvXAH9GmwQsEIaOmVeb0gOxQQRhRoTymyz8k7YqwjyCYb8G2r8Q3cLyri+HQ==", "user"=>{"email"=>"meenakshi.ravichandran@railsdata.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "tenant"=>{"name"=>"Indium", "plan"=>"free"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+  [1m[36mTenant Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tenants" WHERE "tenants"."name" = $1 LIMIT $2[0m  [["name", "Indium"], ["LIMIT", 1]]
+  ↳ app/models/tenant.rb:17
+  [1m[36mTenant Create (0.4ms)[0m  [1m[32mINSERT INTO "tenants" ("name", "created_at", "updated_at", "plan") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Indium"], ["created_at", "2020-02-14 09:35:16.293922"], ["updated_at", "2020-02-14 09:35:16.293922"], ["plan", "free"]]
+  ↳ app/models/tenant.rb:17
+MILIA >>>>> [change tenant] new: 2	old: %
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "meenakshi.ravichandran@railsdata.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "skip_confirm_change_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "meenakshi.ravichandran@railsdata.com"], ["encrypted_password", "$2a$11$NUO88sDqEw6hS2EivVbwdOzEjaoBwdrvv3ZbvPpwp4u0qtFOsCRDG"], ["confirmation_token", "waLUZzzkR1ZXa8Ecutx_"], ["confirmation_sent_at", "2020-02-14 09:35:16.401147"], ["skip_confirm_change_password", true], ["created_at", "2020-02-14 09:35:16.401040"], ["updated_at", "2020-02-14 09:35:16.401040"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:91
+  [1m[36mUser Exists (64.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "tenants_users" ON "users"."id" = "tenants_users"."user_id" WHERE (users.tenant_id IS NULL) AND "tenants_users"."tenant_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["tenant_id", 2], ["id", 2], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:92
+  [1m[36mTenant::HABTM_Users Create (1.1ms)[0m  [1m[32mINSERT INTO "tenants_users" ("tenant_id", "user_id") VALUES ($1, $2)[0m  [["tenant_id", 2], ["user_id", 2]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:94
+MILIA >>>>> [register user/org] devise: signup user success - 
+Redirected to http://localhost:3000/
+MILIA >>>>> [register user/org] signup user/tenant success - 
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+Completed 500 Internal Server Error in 525ms (ActiveRecord: 78.8ms)
+
+
+  
+NoMethodError (undefined method `create_member' for #<User:0x00007fe9903ac2e0>
+Did you mean?  created_at):
+  
+app/models/member.rb:13:in `create_new_member'
+app/models/member.rb:17:in `create_org_admin'
+app/models/tenant.rb:44:in `tenant_signup'
+Started GET "/" for ::1 at 2020-02-14 15:05:21 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=free" for ::1 at 2020-02-14 15:05:23 +0530
+Processing by Milia::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"free"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 44ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-02-14 15:05:50 +0530
+Processing by Milia::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QgHt7b4QNyTluIr/BAo/CDl0hJWmO/TaX4FMFdn2z0kyxoCtODtdiD63zasbQeMY6OPsHs+b7k25riuuUVRLMQ==", "user"=>{"email"=>"meenakshi.ravichandran@railsdata.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "tenant"=>{"name"=>"Indium", "plan"=>"free"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+  [1m[36mTenant Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "tenants" WHERE "tenants"."name" = $1 LIMIT $2[0m  [["name", "Indium"], ["LIMIT", 1]]
+  ↳ app/models/tenant.rb:17
+  [1m[36mTenant Create (0.3ms)[0m  [1m[32mINSERT INTO "tenants" ("name", "created_at", "updated_at", "plan") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Indium"], ["created_at", "2020-02-14 09:35:51.056672"], ["updated_at", "2020-02-14 09:35:51.056672"], ["plan", "free"]]
+  ↳ app/models/tenant.rb:17
+MILIA >>>>> [change tenant] new: 3	old: %
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "meenakshi.ravichandran@railsdata.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "skip_confirm_change_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "meenakshi.ravichandran@railsdata.com"], ["encrypted_password", "$2a$11$mmIXyoS71hepEJpTAyq4guxmkTxkKut6333r2g.hrdD7aQbZNeD9G"], ["confirmation_token", "SKNmjfQT928AsBry1Fg-"], ["confirmation_sent_at", "2020-02-14 09:35:51.163506"], ["skip_confirm_change_password", true], ["created_at", "2020-02-14 09:35:51.163424"], ["updated_at", "2020-02-14 09:35:51.163424"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:91
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "tenants_users" ON "users"."id" = "tenants_users"."user_id" WHERE (users.tenant_id IS NULL) AND "tenants_users"."tenant_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["tenant_id", 3], ["id", 3], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:92
+  [1m[36mTenant::HABTM_Users Create (0.3ms)[0m  [1m[32mINSERT INTO "tenants_users" ("tenant_id", "user_id") VALUES ($1, $2)[0m  [["tenant_id", 3], ["user_id", 3]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:94
+MILIA >>>>> [register user/org] devise: signup user success - 
+Redirected to http://localhost:3000/
+MILIA >>>>> [register user/org] signup user/tenant success - 
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 2.7ms)
+
+
+  
+NoMethodError (undefined method `create_member' for #<User:0x00007fe98ca2cb00>
+Did you mean?  created_at):
+  
+app/models/member.rb:13:in `create_new_member'
+app/models/member.rb:17:in `create_org_admin'
+app/models/tenant.rb:44:in `tenant_signup'
+Started GET "/" for ::1 at 2020-02-14 15:09:29 +0530
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 118ms (Views: 111.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=free" for ::1 at 2020-02-14 15:09:31 +0530
+Processing by Milia::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"free"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 108ms (Views: 68.8ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/users" for ::1 at 2020-02-14 15:10:00 +0530
+Processing by Milia::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PnqMX3pQaE03CSGj2SBCYlag5tKwW+PABEEJUw/4X8NOveEf/HsC4ewGZvfGa55yhzeOWdn7+Vfibm7oh1rbuw==", "user"=>{"email"=>"meenakshi.ravichandran@railsdata.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "tenant"=>{"name"=>"Railsdata", "plan"=>"free"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+  [1m[36mTenant Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "tenants" WHERE "tenants"."name" = $1 LIMIT $2[0m  [["name", "Railsdata"], ["LIMIT", 1]]
+  ↳ app/models/tenant.rb:17
+  [1m[36mTenant Create (0.4ms)[0m  [1m[32mINSERT INTO "tenants" ("name", "created_at", "updated_at", "plan") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Railsdata"], ["created_at", "2020-02-14 09:40:00.393002"], ["updated_at", "2020-02-14 09:40:00.393002"], ["plan", "free"]]
+  ↳ app/models/tenant.rb:17
+MILIA >>>>> [change tenant] new: 4	old: %
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "meenakshi.ravichandran@railsdata.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "skip_confirm_change_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "meenakshi.ravichandran@railsdata.com"], ["encrypted_password", "$2a$11$uXIc82pxiGGY9vMPXgn35ebtnAEXool/GHaf762DWcwJ0mSeDAMZC"], ["confirmation_token", "26ghGYS2LLs8osNdGCri"], ["confirmation_sent_at", "2020-02-14 09:40:00.503184"], ["skip_confirm_change_password", true], ["created_at", "2020-02-14 09:40:00.503081"], ["updated_at", "2020-02-14 09:40:00.503081"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+  [1m[36mTenant Load (0.5ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:91
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "tenants_users" ON "users"."id" = "tenants_users"."user_id" WHERE (users.tenant_id IS NULL) AND "tenants_users"."tenant_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["tenant_id", 4], ["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:92
+  [1m[36mTenant::HABTM_Users Create (0.3ms)[0m  [1m[32mINSERT INTO "tenants_users" ("tenant_id", "user_id") VALUES ($1, $2)[0m  [["tenant_id", 4], ["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:94
+MILIA >>>>> [register user/org] devise: signup user success - 
+Redirected to http://localhost:3000/
+MILIA >>>>> [register user/org] signup user/tenant success - 
+  [1m[36mTenant Load (0.8ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/member.rb:13
+  [1m[36mMember Create (131.3ms)[0m  [1m[32mINSERT INTO "members" ("tenant_id", "user_id", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["tenant_id", 4], ["user_id", 4], ["first_name", "Admin"], ["last_name", "Please edit me"], ["created_at", "2020-02-14 09:40:00.603849"], ["updated_at", "2020-02-14 09:40:00.603849"]]
+  ↳ app/models/member.rb:13
+  [1m[36mMember Load (1.5ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE (members.tenant_id = 4) AND "members"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/models/member.rb:13
+  [1m[35m (14.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+  Rendering /home/railsdata/.rvm/gems/ruby-2.4.6/gems/devise-4.7.1/app/views/devise/mailer/confirmation_instructions.html.erb
+  Rendered /home/railsdata/.rvm/gems/ruby-2.4.6/gems/devise-4.7.1/app/views/devise/mailer/confirmation_instructions.html.erb (0.6ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 830.0ms
+Sent mail to meenakshi.ravichandran@railsdata.com (18.4ms)
+Date: Fri, 14 Feb 2020 15:10:01 +0530
+From: do-not-reply@example.com
+Reply-To: do-not-reply@example.com
+To: meenakshi.ravichandran@railsdata.com
+Message-ID: <5e466af1a187d_7502aac8599118052898@railsdata-ThinkPad-E490.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome meenakshi.ravichandran@railsdata.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=26ghGYS2LLs8osNdGCri">Confirm my account</a></p>
+
+Completed 302 Found in 1391ms (ActiveRecord: 166.1ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 15:10:01 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=26ghGYS2LLs8osNdGCri" for ::1 at 2020-02-14 15:10:25 +0530
+  
+ActionController::RoutingError (uninitialized constant Milia::ConfirmationsContoller):
+  
+app/controllers/confirmations_controller.rb:1:in `<main>'
+Started GET "/users/confirmation?confirmation_token=26ghGYS2LLs8osNdGCri" for ::1 at 2020-02-14 15:13:26 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"26ghGYS2LLs8osNdGCri"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "26ghGYS2LLs8osNdGCri"], ["LIMIT", 1]]
+  ↳ app/controllers/confirmations_controller.rb:90
+MILIA >>>>> [confirm user] devise pass-thru - meenakshi.ravichandran@railsdata.com
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "26ghGYS2LLs8osNdGCri"], ["LIMIT", 1]]
+  ↳ app/controllers/confirmations_controller.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/confirmations_controller.rb:39
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2020-02-14 09:43:26.321496"], ["updated_at", "2020-02-14 09:43:26.322282"], ["id", 4]]
+  ↳ app/controllers/confirmations_controller.rb:39
+  [1m[35m (107.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/confirmations_controller.rb:39
+  [1m[36mTenant Load (0.6ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+Redirected to http://localhost:3000/
+Completed 302 Found in 183ms (ActiveRecord: 117.9ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 15:13:26 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.4ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/home_controller.rb:12:in `index'
+Started GET "/" for ::1 at 2020-02-14 15:19:44 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 5.1ms)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass):
+  
+app/controllers/home_controller.rb:12:in `index'
+Started GET "/" for ::1 at 2020-02-14 15:20:22 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.9ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 ORDER BY "tenants"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:12
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 7.3ms)
+
+
+  
+NoMethodError (undefined method `id' for true:TrueClass):
+  
+app/controllers/home_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2020-02-14 15:20:50 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 ORDER BY "tenants"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:12
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 7.1ms)
+
+
+  
+NoMethodError (undefined method `id' for true:TrueClass):
+  
+app/controllers/home_controller.rb:14:in `index'
+Started GET "/" for ::1 at 2020-02-14 15:21:34 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.5ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 ORDER BY "tenants"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:12
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 ORDER BY "tenants"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:13
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 ORDER BY "tenants"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:14
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 6.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for true:TrueClass):
+    1: <% if current_user %>
+    2: 
+    3: <h3>Organization: <%= @tenant.name %></h3>
+    4: 
+    5: <% else %>
+    6: 
+  
+app/views/home/index.html.erb:3:in `_app_views_home_index_html_erb__4227706333291136191_47173766867780'
+  [1m[36mTenant Load (0.5ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTenant Load (0.5ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 11]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTenant Load (1.7ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 ORDER BY "tenants"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTenant Load (1.5ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 ORDER BY "tenants"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+  [1m[36mTenant Load (1.2ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-02-14 15:26:19 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 194ms (Views: 164.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/members/new" for ::1 at 2020-02-14 15:26:24 +0530
+Processing by MembersController#new as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.9ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  Rendering members/new.html.erb within layouts/application
+  Rendered members/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 59ms (Views: 23.1ms | ActiveRecord: 8.0ms)
+
+
+Started POST "/members" for ::1 at 2020-02-14 15:26:53 +0530
+Processing by MembersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WUn4besyLuCqSTlKxVi0nG1FCG+vRYc2jrESy3GARs8pjpUtbRlETHFGfh7aE2iMvNJg5MblnaFonnVw+SLCtw==", "user"=>{"email"=>"raaghul.sundar@railsdata.com"}, "member"=>{"first_name"=>"Raaghul", "last_name"=>"Sundhar"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.6ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: 4
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND (lower(email) = 'raaghul.sundar@railsdata.com')[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:57
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:61
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "raaghul.sundar@railsdata.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:61
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "raaghul.sundar@railsdata.com"], ["encrypted_password", "$2a$11$ascjj/CnN5xoioEUZSGcmO2s7KbinkqZjWuCEPhpa63cqt.zrYLfS"], ["confirmation_token", "kJmgxZR_ffMknhWxJdjw"], ["confirmation_sent_at", "2020-02-14 09:56:53.991365"], ["created_at", "2020-02-14 09:56:53.991264"], ["updated_at", "2020-02-14 09:56:53.991264"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:61
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:91
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "tenants_users" ON "users"."id" = "tenants_users"."user_id" WHERE (users.tenant_id IS NULL) AND "tenants_users"."tenant_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["tenant_id", 4], ["id", 5], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:92
+  [1m[36mTenant::HABTM_Users Create (0.4ms)[0m  [1m[32mINSERT INTO "tenants_users" ("tenant_id", "user_id") VALUES ($1, $2)[0m  [["tenant_id", 4], ["user_id", 5]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:94
+  [1m[35m (72.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:61
+  Rendering /home/railsdata/.rvm/gems/ruby-2.4.6/gems/devise-4.7.1/app/views/devise/mailer/confirmation_instructions.html.erb
+  Rendered /home/railsdata/.rvm/gems/ruby-2.4.6/gems/devise-4.7.1/app/views/devise/mailer/confirmation_instructions.html.erb (1.0ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 55.3ms
+Sent mail to raaghul.sundar@railsdata.com (2.9ms)
+Date: Fri, 14 Feb 2020 15:26:54 +0530
+From: do-not-reply@example.com
+Reply-To: do-not-reply@example.com
+To: raaghul.sundar@railsdata.com
+Message-ID: <5e466ee6245eb_170c2aef87d94a1c650ea@railsdata-ThinkPad-E490.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome raaghul.sundar@railsdata.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=kJmgxZR_ffMknhWxJdjw">Confirm my account</a></p>
+
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/members_controller.rb:15
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/members_controller.rb:15
+  [1m[36mMember Create (0.6ms)[0m  [1m[32mINSERT INTO "members" ("tenant_id", "user_id", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["tenant_id", 4], ["user_id", 5], ["first_name", "Raaghul"], ["last_name", "Sundhar"], ["created_at", "2020-02-14 09:56:54.155548"], ["updated_at", "2020-02-14 09:56:54.155548"]]
+  ↳ app/controllers/members_controller.rb:15
+  [1m[35m (118.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/members_controller.rb:15
+  [1m[36mMember Load (1.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE (members.tenant_id = 4) AND "members"."user_id" = $1 LIMIT $2[0m  [["user_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/members_controller.rb:15
+Redirected to http://localhost:3000/
+Completed 302 Found in 407ms (ActiveRecord: 198.6ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 15:26:54 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+  [1m[36mTenant Load (0.9ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 40ms (Views: 27.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/confirmation?confirmation_token=kJmgxZR_ffMknhWxJdjw" for ::1 at 2020-02-14 15:27:09 +0530
+Processing by ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"kJmgxZR_ffMknhWxJdjw"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "kJmgxZR_ffMknhWxJdjw"], ["LIMIT", 1]]
+  ↳ app/controllers/confirmations_controller.rb:90
+MILIA >>>>> [confirm user] password set form - raaghul.sundar@railsdata.com
+  Rendering devise/confirmations/show.html.erb within layouts/application
+  Rendered devise/confirmations/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:27
+Completed 200 OK in 29ms (Views: 23.9ms | ActiveRecord: 1.1ms)
+
+
+Started PUT "/user/confirmation" for ::1 at 2020-02-14 15:27:18 +0530
+Processing by ConfirmationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LB9aq4PzVuklBI6rKYHYes5P0Sxg8lU994GL2gFySSdc2DfrBdg8Rf4Lyf82ygRqH9i5pwlST6oRruxhidDNXw==", "confirmation_token"=>"kJmgxZR_ffMknhWxJdjw", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Password"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "kJmgxZR_ffMknhWxJdjw"], ["LIMIT", 1]]
+  ↳ app/controllers/confirmations_controller.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:26
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:26
+MILIA >>>>> [confirm user] invitee password set failed - raaghul.sundar@railsdata.com
+  Rendering devise/confirmations/show.html.erb within layouts/application
+  Rendered devise/confirmations/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:27
+Completed 200 OK in 141ms (Views: 23.7ms | ActiveRecord: 1.7ms)
+
+
+Started PUT "/user/confirmation" for ::1 at 2020-02-14 15:27:34 +0530
+Processing by ConfirmationsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LPn1k8HkXPbaAE3B2eq3cZg6KHECJBBMy+a5kt6YOnpcPpjTR882WgEPCpXGoWthSa1A+muECtstyd4pVjq+Ag==", "confirmation_token"=>"kJmgxZR_ffMknhWxJdjw", "user"=>{"password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Password"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "kJmgxZR_ffMknhWxJdjw"], ["LIMIT", 1]]
+  ↳ app/controllers/confirmations_controller.rb:90
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:26
+  [1m[36mUser Update (0.5ms)[0m  [1m[33mUPDATE "users" SET "encrypted_password" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["encrypted_password", "$2a$11$QB4VCrnYoipHSLQn/I5NtuodVV/3NFsgAvGKtyjdgl7g2Ts/q1Ije"], ["updated_at", "2020-02-14 09:57:34.939441"], ["id", 5]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:26
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/invite_member.rb:26
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."confirmation_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["confirmation_token", "kJmgxZR_ffMknhWxJdjw"], ["LIMIT", 1]]
+  ↳ app/controllers/confirmations_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/confirmations_controller.rb:8
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "confirmed_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["confirmed_at", "2020-02-14 09:57:34.956558"], ["updated_at", "2020-02-14 09:57:34.957086"], ["id", 5]]
+  ↳ app/controllers/confirmations_controller.rb:8
+  [1m[35m (30.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/confirmations_controller.rb:8
+MILIA >>>>> [confirm user] invitee confirmed - raaghul.sundar@railsdata.com
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/confirmations_controller.rb:87
+  [1m[36mTenant Load (1.6ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 5]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: 4
+Redirected to http://localhost:3000/
+Completed 302 Found in 177ms (ActiveRecord: 49.6ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 15:27:35 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+  [1m[36mTenant Load (1.2ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 43ms (Views: 30.3ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-02-14 15:27:40 +0530
+Processing by Milia::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zABP/vKCHja7Ozu2OocHjD/vNk8wvDEmcD6P7KKSbSC8xyK+dKl0mmA0fOIlzNuc7nhexFkcK7GWEehXKjDpWA=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+MILIA >>>>> [change tenant] new: %	old: %
+MILIA >>>>> [reset tenant] 
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 185ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 15:27:40 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 41ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-14 15:27:43 +0530
+Processing by Milia::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-02-14 15:27:52 +0530
+Processing by Milia::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fbib3XeaZDBwtz7J2v5fiRIkIKHJJEJ6+z5Cb2hD0JJOogzFLCzsS4W8aJi1YxkCV/dnBza+hD9Hg7fXxgTlGg==", "user"=>{"email"=>"raaghul.sundar@railsdata.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+MILIA >>>>> [change tenant] new: %	old: %
+MILIA >>>>> [reset tenant] 
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "raaghul.sundar@railsdata.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 115ms (ActiveRecord: 0.6ms)
+
+
+Processing by Milia::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fbib3XeaZDBwtz7J2v5fiRIkIKHJJEJ6+z5Cb2hD0JJOogzFLCzsS4W8aJi1YxkCV/dnBza+hD9Hg7fXxgTlGg==", "user"=>{"email"=>"raaghul.sundar@railsdata.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 130ms (Views: 22.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-02-14 15:27:57 +0530
+Processing by Milia::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dqJ7R5D1xXOnPGIa1NUKqcXHQSh5/Urxj1p7WabdrkAtuOxfy0NNCFI3NEu7SEwigBQGjoZnjLQz547hCJqbyA==", "user"=>{"email"=>"raaghul.sundar@railsdata.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+MILIA >>>>> [change tenant] new: %	old: 4
+MILIA >>>>> [reset tenant] 
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "raaghul.sundar@railsdata.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 215ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 15:27:58 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+  [1m[36mTenant Load (1.1ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 ORDER BY "tenants"."id" ASC LIMIT $2[0m  [["user_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:9
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.5ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 44ms (Views: 29.7ms | ActiveRecord: 2.6ms)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (users.tenant_id IS NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTenant Load (0.6ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mUser::HABTM_Tenants Destroy (90.4ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."user_id" = $1 AND "tenants_users"."tenant_id" = $2[0m  [["user_id", 4], ["tenant_id", 4]]
+  [1m[36mMember Load (1.4ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE (members.tenant_id = NULL) AND "members"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  [1m[36mUser::HABTM_Tenants Destroy (0.8ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mUser Destroy (3.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (users.tenant_id IS NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTenant Load (1.2ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mUser::HABTM_Tenants Destroy (1.0ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."user_id" = $1 AND "tenants_users"."tenant_id" = $2[0m  [["user_id", 4], ["tenant_id", 4]]
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE (members.tenant_id = NULL) AND "members"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  [1m[36mUser::HABTM_Tenants Destroy (0.9ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mUser Destroy (2.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) ORDER BY "users"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTenant Load (1.3ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mUser::HABTM_Tenants Destroy (1.1ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."user_id" = $1 AND "tenants_users"."tenant_id" = $2[0m  [["user_id", 4], ["tenant_id", 4]]
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE (members.tenant_id = NULL) AND "members"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  [1m[36mUser::HABTM_Tenants Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE (members.tenant_id = NULL)[0m
+  [1m[36mTenant Load (1.1ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "tenants_users" ON "users"."id" = "tenants_users"."user_id" WHERE (users.tenant_id IS NULL) AND "tenants_users"."tenant_id" = $1[0m  [["tenant_id", 4]]
+  [1m[36mTenant::HABTM_Users Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."tenant_id" = $1 AND "tenants_users"."user_id" IN ($2, $3)[0m  [["tenant_id", 4], ["user_id", 4], ["user_id", 5]]
+  [1m[36mMember Load (0.2ms)[0m  [1m[34mSELECT "members".* FROM "members" WHERE (members.tenant_id = NULL) AND "members"."tenant_id" = $1[0m  [["tenant_id", 4]]
+  [1m[36mTenant::HABTM_Users Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."tenant_id" = $1[0m  [["tenant_id", 4]]
+  [1m[36mTenant Destroy (1.1ms)[0m  [1m[31mDELETE FROM "tenants" WHERE "tenants"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE (members.tenant_id = NULL) LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (users.tenant_id IS NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTenant Load (1.2ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mUser::HABTM_Tenants Destroy (1.1ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."user_id" = $1 AND "tenants_users"."tenant_id" = $2[0m  [["user_id", 4], ["tenant_id", 4]]
+  [1m[36mMember Load (1.0ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE (members.tenant_id = NULL) AND "members"."user_id" = $1 LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  [1m[36mUser::HABTM_Tenants Destroy (0.9ms)[0m  [1m[31mDELETE FROM "tenants_users" WHERE "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  [1m[36mUser Destroy (2.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for ::1 at 2020-02-14 16:31:47 +0530
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 187ms (Views: 147.3ms | ActiveRecord: 9.5ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-02-14 16:31:49 +0530
+Processing by Milia::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"APACS6xk/n3xioxDdSSzPrF3oC1vDJJJmBFGaaYWtFYOLjMQ0D9K7roixb1lsNLP7fcUBEA1g88s0bEl019WAg=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+MILIA >>>>> [change tenant] new: %	old: %
+MILIA >>>>> [reset tenant] 
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 16:31:49 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 51ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up?plan=free" for ::1 at 2020-02-14 16:31:52 +0530
+Processing by Milia::RegistrationsController#new as HTML
+  Parameters: {"plan"=>"free"}
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-02-14 16:32:06 +0530
+Processing by Milia::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"W5K5SUWQSJhfHR9jzp4+A/BD2yQVQ8AToRyKyg0hnt1nhycod9V5dsT1yDO8TYmO0J0KOO5as9shh++VZG4/Rg==", "user"=>{"email"=>"raaghul.sundar@railsdata.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "tenant"=>{"name"=>"Apple", "plan"=>"free"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+  [1m[36mTenant Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tenants" WHERE "tenants"."name" = $1 LIMIT $2[0m  [["name", "Apple"], ["LIMIT", 1]]
+  ↳ app/models/tenant.rb:17
+  [1m[36mTenant Create (0.4ms)[0m  [1m[32mINSERT INTO "tenants" ("name", "created_at", "updated_at", "plan") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Apple"], ["created_at", "2020-02-14 11:02:06.887996"], ["updated_at", "2020-02-14 11:02:06.887996"], ["plan", "free"]]
+  ↳ app/models/tenant.rb:17
+MILIA >>>>> [change tenant] new: 5	old: %
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "raaghul.sundar@railsdata.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+MILIA >>>>> [register user/org] devise: signup user success - Email has already been taken
+MILIA >>>>> [register user/org] devise: signup user failure - Email has already been taken
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.7ms)
+MILIA >>>>> [register user/org] signup user create failed - Email has already been taken
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+Completed 200 OK in 246ms (Views: 21.5ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users" for ::1 at 2020-02-14 16:32:46 +0530
+Processing by Milia::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9N/vXtola2J9ZV8Z4A0ykSvKZP0eL+lKbeCDBoRuv7TIynE/6GBajOaNiEmS3oUcCxS14eU2moLte+ZZ7SEeLw==", "user"=>{"email"=>"raaghulfake98@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "tenant"=>{"name"=>"Apple", "plan"=>"free"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+  [1m[36mTenant Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "tenants" WHERE "tenants"."name" = $1 LIMIT $2[0m  [["name", "Apple"], ["LIMIT", 1]]
+  ↳ app/models/tenant.rb:17
+  [1m[36mTenant Create (0.3ms)[0m  [1m[32mINSERT INTO "tenants" ("name", "created_at", "updated_at", "plan") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Apple"], ["created_at", "2020-02-14 11:02:46.350054"], ["updated_at", "2020-02-14 11:02:46.350054"], ["plan", "free"]]
+  ↳ app/models/tenant.rb:17
+MILIA >>>>> [change tenant] new: 6	old: %
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "raaghulfake98@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "confirmation_token", "confirmation_sent_at", "skip_confirm_change_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "raaghulfake98@gmail.com"], ["encrypted_password", "$2a$11$kkVE5CPXsQqg5Ev2pdEBde8D0PauPYfRDm6FTQbZfCxReH.xg9cBG"], ["confirmation_token", "kDEFQoXvQm7rEDzEx1xx"], ["confirmation_sent_at", "2020-02-14 11:02:46.457050"], ["skip_confirm_change_password", true], ["created_at", "2020-02-14 11:02:46.456944"], ["updated_at", "2020-02-14 11:02:46.456944"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:115
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:91
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" INNER JOIN "tenants_users" ON "users"."id" = "tenants_users"."user_id" WHERE (users.tenant_id IS NULL) AND "tenants_users"."tenant_id" = $1 AND "users"."id" = $2 LIMIT $3[0m  [["tenant_id", 6], ["id", 6], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:92
+  [1m[36mTenant::HABTM_Users Create (0.3ms)[0m  [1m[32mINSERT INTO "tenants_users" ("tenant_id", "user_id") VALUES ($1, $2)[0m  [["tenant_id", 6], ["user_id", 6]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:94
+MILIA >>>>> [register user/org] devise: signup user success - 
+Redirected to http://localhost:3000/
+MILIA >>>>> [register user/org] signup user/tenant success - 
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/models/member.rb:13
+  [1m[36mMember Create (0.6ms)[0m  [1m[32mINSERT INTO "members" ("tenant_id", "user_id", "first_name", "last_name", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["tenant_id", 6], ["user_id", 6], ["first_name", "Admin"], ["last_name", "Please edit me"], ["created_at", "2020-02-14 11:02:46.489411"], ["updated_at", "2020-02-14 11:02:46.489411"]]
+  ↳ app/models/member.rb:13
+  [1m[36mMember Load (0.3ms)[0m  [1m[34mSELECT  "members".* FROM "members" WHERE (members.tenant_id = 6) AND "members"."user_id" = $1 LIMIT $2[0m  [["user_id", 6], ["LIMIT", 1]]
+  ↳ app/models/member.rb:13
+  [1m[35m (11.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/app/controllers/registrations_controller.rb:30
+  Rendering /home/railsdata/.rvm/gems/ruby-2.4.6/gems/devise-4.7.1/app/views/devise/mailer/confirmation_instructions.html.erb
+  Rendered /home/railsdata/.rvm/gems/ruby-2.4.6/gems/devise-4.7.1/app/views/devise/mailer/confirmation_instructions.html.erb (0.5ms)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 26.3ms
+Sent mail to raaghulfake98@gmail.com (1422.4ms)
+Date: Fri, 14 Feb 2020 16:32:46 +0530
+From: do-not-reply@example.com
+Reply-To: do-not-reply@example.com
+To: raaghulfake98@gmail.com
+Message-ID: <5e467e56825de_50a92adb80b39a6c886f3@railsdata-ThinkPad-E490.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome raaghulfake98@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=kDEFQoXvQm7rEDzEx1xx">Confirm my account</a></p>
+
+Completed 302 Found in 1718ms (ActiveRecord: 20.3ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 16:32:47 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(738670611444274740)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Migrating to CreateProjects (20200214112037)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (327.5ms)[0m  [1m[35mCREATE TABLE "projects" ("id" bigserial primary key, "title" character varying, "details" character varying, "expected_completion_date" date, "tenant_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c6b5275ea1"
+FOREIGN KEY ("tenant_id")
+  REFERENCES "tenants" ("id")
+)[0m
+  ↳ db/migrate/20200214112037_create_projects.rb:3
+  [1m[35m (41.2ms)[0m  [1m[35mCREATE  INDEX  "index_projects_on_tenant_id" ON "projects"  ("tenant_id")[0m
+  ↳ db/migrate/20200214112037_create_projects.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200214112037"]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (18.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (43.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(738670611444274740)[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bin/rake:23
+Started GET "/" for ::1 at 2020-02-14 17:02:18 +0530
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 404ms (Views: 397.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-14 17:02:22 +0530
+Processing by Milia::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 55ms (Views: 28.8ms | ActiveRecord: 8.9ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-02-14 17:02:42 +0530
+Processing by Milia::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yasMI8sBwvGoXDOzfMrIyVkcPpkojA/09/ymNWt9gyv1vpJC+UTzHzO05OMOGX9EecLvhdOVfDx3Z8NqAjIisA==", "user"=>{"email"=>"meenakshi.ravichandran@railsdata.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+MILIA >>>>> [change tenant] new: %	old: %
+MILIA >>>>> [reset tenant] 
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "meenakshi.ravichandran@railsdata.com"], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 114ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 17:02:42 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+  [1m[36mTenant Load (0.6ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1 ORDER BY "tenants"."id" ASC LIMIT $2[0m  [["user_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:9
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 18.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/members/new" for ::1 at 2020-02-14 17:02:45 +0530
+Processing by MembersController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (1.0ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  Rendering members/new.html.erb within layouts/application
+  Rendered members/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 61ms (Views: 32.0ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/tenants/4/projects" for ::1 at 2020-02-14 17:03:04 +0530
+Processing by ProjectsController#index as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (1.7ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 6.9ms)
+
+
+  
+NoMethodError (undefined method `validate_uniqueness_of' for #<Class:0x00007f4fa03a3300>
+Did you mean?  validates_uniqueness_of):
+  
+app/models/project.rb:3:in `<class:Project>'
+app/models/project.rb:1:in `<main>'
+app/controllers/projects_controller.rb:7:in `index'
+Started GET "/tenants/4/projects" for ::1 at 2020-02-14 17:03:27 +0530
+Processing by ProjectsController#index as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: 4
+Completed 406 Not Acceptable in 52ms (ActiveRecord: 6.8ms)
+
+
+  
+ActionController::UnknownFormat (ProjectsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 17:04:00 +0530
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (125.1ms)
+  Rendered projects/new.html.erb within layouts/application (126.3ms)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `projects_path' for #<#<Class:0x00007f4f9987fb28>:0x00007f4f9987dc88>):
+    1: <%= form_for @project, :html => { :class => "form-horizontal project" } do |f| %>
+    2: 
+    3:   <% if @project.errors.any? %>
+    4:     <div id="error_expl" class="panel panel-danger">
+  
+app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb__1464700726292034405_69989927371580'
+app/views/projects/new.html.erb:5:in `_app_views_projects_new_html_erb__4056800868231296251_69989927502460'
+Started GET "/tenants/4/projects" for ::1 at 2020-02-14 17:05:11 +0530
+Processing by ProjectsController#index as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.7ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: 4
+Completed 406 Not Acceptable in 24ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionController::UnknownFormat (ProjectsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []):
+  
+actionpack (5.2.4.1) lib/action_controller/metal/implicit_render.rb:42:in `default_render'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.4.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.4.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.4.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.4.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.4.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.4.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.4.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.4.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.4.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 17:05:19 +0530
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.6ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: 4
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (119.1ms)
+  Rendered projects/new.html.erb within layouts/application (120.9ms)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `projects_path' for #<#<Class:0x00007f4f9987fb28>:0x00007f4f9987cdd8>):
+    1: <%= form_for @project, :html => { :class => "form-horizontal project" } do |f| %>
+    2: 
+    3:   <% if @project.errors.any? %>
+    4:     <div id="error_expl" class="panel panel-danger">
+  
+app/views/projects/_form.html.erb:1:in `_app_views_projects__form_html_erb__1464700726292034405_69989927325740'
+app/views/projects/new.html.erb:5:in `_app_views_projects_new_html_erb__4056800868231296251_69989927480720'
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 17:33:27 +0530
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/railsdata/Documents/ruby_projects/saas-project-management/app/controllers/projects_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/projects_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/" for ::1 at 2020-02-14 19:34:17 +0530
+  [1m[35m (47.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (70.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (47.2ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+Completed 500 Internal Server Error in 378ms (ActiveRecord: 179.8ms)
+
+
+  
+NoMethodError (undefined method `by_user_and_tenant' for #<Class:0x000055f18e07c7d8>):
+  
+app/controllers/home_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2020-02-14 19:34:42 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 15.1ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/models/project.rb:12:in `by_plan_and_tenant'
+app/controllers/home_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2020-02-14 19:34:53 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 5.3ms)
+
+
+  
+NameError (undefined local variable or method `params' for #<Class:0x000055f18d7fbaf0>):
+  
+app/models/project.rb:13:in `by_plan_and_tenant'
+app/controllers/home_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2020-02-14 19:35:24 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  [1m[36mProject Load (22.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 11]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+Completed 500 Internal Server Error in 214ms (ActiveRecord: 10.1ms)
+
+
+  
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 11]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+NoMethodError (undefined method `order_by' for #<ActiveRecord::Associations::CollectionProxy []>
+Did you mean?  order):
+  
+app/models/project.rb:17:in `by_plan_and_tenant'
+app/controllers/home_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2020-02-14 19:35:39 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 638ms (Views: 518.1ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 19:35:54 +0530
+  
+SyntaxError (/home/railsdata/Documents/ruby_projects/saas-project-management/app/controllers/projects_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/projects_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 19:38:04 +0530
+  
+SyntaxError (/home/railsdata/Documents/ruby_projects/saas-project-management/app/controllers/projects_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/projects_controller.rb:82: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 19:39:48 +0530
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (76.3ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: 4
+  [1m[36mTenant Load (1.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (79.6ms)
+  Rendered projects/new.html.erb within layouts/application (186.5ms)
+Completed 200 OK in 506ms (Views: 231.6ms | ActiveRecord: 100.8ms)
+
+
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 19:40:45 +0530
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (1.7ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  [1m[36mTenant Load (1.2ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (4.4ms)
+  Rendered projects/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 55ms (Views: 35.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 19:46:50 +0530
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.5ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.6ms)
+  Rendered projects/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 1349ms (Views: 1298.2ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/tenants/4" for ::1 at 2020-02-14 19:47:02 +0530
+  
+ActionController::RoutingError (uninitialized constant TenantsController):
+  
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.5) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.4.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.4.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-14 19:47:06 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.5ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 109ms (Views: 101.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 19:47:12 +0530
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: 4
+  [1m[36mTenant Load (0.2ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (2.3ms)
+  Rendered projects/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 103ms (Views: 97.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 19:49:55 +0530
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.6ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  [1m[36mTenant Load (0.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.9ms)
+  Rendered projects/new.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 10.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/railsdata/Documents/ruby_projects/saas-project-management/app/assets/config
+  /home/railsdata/Documents/ruby_projects/saas-project-management/app/assets/images
+  /home/railsdata/Documents/ruby_projects/saas-project-management/app/assets/javascripts
+  /home/railsdata/Documents/ruby_projects/saas-project-management/app/assets/stylesheets
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/bootstrap-datepicker-rails-1.9.0.1/vendor/assets/javascripts
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/bootstrap-datepicker-rails-1.9.0.1/vendor/assets/stylesheets
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/twitter-bootstrap-rails-4.0.0/app/assets/fonts
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/twitter-bootstrap-rails-4.0.0/app/assets/javascripts
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/twitter-bootstrap-rails-4.0.0/app/assets/stylesheets
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/twitter-bootstrap-rails-4.0.0/vendor/assets/stylesheets
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/actioncable-5.2.4.1/lib/assets/compiled
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activestorage-5.2.4.1/app/assets/javascripts
+  /home/railsdata/.rvm/gems/ruby-2.4.6/gems/actionview-5.2.4.1/lib/assets/compiled
+  /home/railsdata/Documents/ruby_projects/saas-project-management/node_modules):
+     7:     <title><%= content_for?(:title) ? yield(:title) : "SaasProjectManagement" %></title>
+     8:     <%= csrf_meta_tags %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", :media => "all" %>
+    11: 
+    12:     <%= javascript_include_tag "application" %>
+    13: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:10:in `_app_views_layouts_application_html_erb___4567831048699890553_47288583078480'
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 19:50:52 +0530
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (1.2ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  [1m[36mTenant Load (0.7ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.4ms)
+  Rendered projects/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 209ms (Views: 192.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 19:54:33 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.5ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.5ms)
+  Rendered projects/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 464ms (Views: 422.2ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/tenants/4/projects/new" for ::1 at 2020-02-14 20:13:19 +0530
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by ProjectsController#new as HTML
+  Parameters: {"tenant_id"=>"4"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (0.5ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  Rendering projects/new.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.7ms)
+  Rendered projects/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 316ms (Views: 265.5ms | ActiveRecord: 11.3ms)
+
+
+Started POST "/tenants/4/projects" for ::1 at 2020-02-14 20:13:34 +0530
+Processing by ProjectsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7Cx2BV2J+gkLckjPk7zsipx/oj9v3o4pj7UEUXO76YWSmCDLfEcJXMHMXyDHe71cPoB4K8rB5/eCWAEcGbcY3A==", "project"=>{"title"=>"new project", "details"=>"test project", "expected_completion_date"=>"2020-02-26", "tenant_id"=>"4"}, "commit"=>"Create Project", "tenant_id"=>"4"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (1.6ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  [1m[36mTenant Load (1.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/projects_controller.rb:32
+  [1m[36mTenant Load (1.2ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:32
+  [1m[36mProject Exists (1.5ms)[0m  [1m[34mSELECT  1 AS one FROM "projects" WHERE "projects"."title" = $1 LIMIT $2[0m  [["title", "new project"], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:32
+  [1m[35m (32.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects" WHERE "projects"."tenant_id" = $1[0m  [["tenant_id", 4]]
+  ↳ app/models/project.rb:7
+  [1m[36mProject Create (72.4ms)[0m  [1m[32mINSERT INTO "projects" ("title", "details", "expected_completion_date", "tenant_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["title", "new project"], ["details", "test project"], ["expected_completion_date", "2020-02-26"], ["tenant_id", 4], ["created_at", "2020-02-14 14:43:35.012146"], ["updated_at", "2020-02-14 14:43:35.012146"]]
+  ↳ app/controllers/projects_controller.rb:32
+  [1m[35m (11.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/projects_controller.rb:32
+Redirected to http://localhost:3000/
+Completed 302 Found in 191ms (ActiveRecord: 124.1ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 20:13:35 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+  [1m[36mTenant Load (1.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ app/views/projects/_list.html.erb:28
+  Rendered projects/_list.html.erb (129.3ms)
+  Rendered home/index.html.erb within layouts/application (145.6ms)
+Completed 500 Internal Server Error in 167ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `users_tenant_project_path' for #<#<Class:0x00007f51456c9d30>:0x00007f51456c8278>
+Did you mean?  new_tenant_project_path):
+    43: 
+    44: edit_tenant_project_path(project, tenant_id: @tenant.id), :class => 'btn btn-default btn-xs' %>
+    45: 
+    46: <%= link_to 'Edit Users', users_tenant_project_path(project, tenant_id: @tenant.id),
+    47: 
+    48: :class => 'btn btn-default btn-xs' %>
+    49: 
+  
+app/views/projects/_list.html.erb:46:in `block in _app_views_projects__list_html_erb___2712674575613265262_69993516683620'
+app/views/projects/_list.html.erb:28:in `_app_views_projects__list_html_erb___2712674575613265262_69993516683620'
+app/views/home/index.html.erb:5:in `_app_views_home_index_html_erb__3341800610909036916_69993516913400'
+Started GET "/" for ::1 at 2020-02-14 20:16:59 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.8ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:10
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:6
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:6
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:6
+  [1m[36mCACHE Project Load (0.0ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/rubies/ruby-2.4.6/lib/ruby/gems/2.4.0/gems/did_you_mean-1.1.0/lib/did_you_mean/core_ext/name_error.rb:6
+  Rendered projects/_list.html.erb (235.8ms)
+  Rendered home/index.html.erb within layouts/application (237.4ms)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `model_class' for #<#<Class:0x00007f51456c9d30>:0x00007f514615dbe8>
+Did you mean?  dom_class):
+    1: <div class="page-header">
+    2: 
+    3: <h1><%=t '.title', :default => model_class.model_name.human.pluralize.titleize %></h1>
+    4: 
+    5: </div>
+    6: 
+  
+app/views/projects/_list.html.erb:3:in `_app_views_projects__list_html_erb___2712674575613265262_69993522355660'
+app/views/home/index.html.erb:5:in `_app_views_home_index_html_erb__3341800610909036916_69993522459460'
+Started GET "/" for ::1 at 2020-02-14 20:18:13 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+  [1m[36mTenant Load (0.9ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ app/views/projects/_list.html.erb:28
+  Rendered projects/_list.html.erb (5.0ms)
+  Rendered home/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 115ms (Views: 99.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/tenants/4/projects/1/edit" for ::1 at 2020-02-14 20:18:20 +0530
+Processing by ProjectsController#edit as HTML
+  Parameters: {"tenant_id"=>"4", "id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:102
+  [1m[36mTenant Load (1.4ms)[0m  [1m[34mSELECT "tenants".* FROM "tenants" INNER JOIN "tenants_users" ON "tenants"."id" = "tenants_users"."tenant_id" WHERE (tenants.tenant_id IS NULL) AND "tenants_users"."user_id" = $1[0m  [["user_id", 4]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/control.rb:69
+MILIA >>>>> [change tenant] new: 4	old: %
+  [1m[36mTenant Load (0.9ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:74
+  [1m[36mProject Load (0.6ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/projects_controller.rb:65
+  Rendering projects/edit.html.erb within layouts/application
+  Rendered projects/_form.html.erb (3.3ms)
+  Rendered projects/edit.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 113ms (Views: 91.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 20:24:21 +0530
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (2.4ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ app/views/projects/_list.html.erb:28
+  Rendered projects/_list.html.erb (23.1ms)
+  Rendered home/index.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 216ms (ActiveRecord: 18.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `can_add_projects?' for #<Tenant:0x00007f8eb0301b50>):
+    65: 
+    66: </table>
+    67: 
+    68: <% if @tenant.can_add_projects? %>
+    69: 
+    70: 	<%= link_to 'New Project', new_tenant_project_path(tenant_id: @tenant.id),
+    71: 
+  
+app/views/projects/_list.html.erb:68:in `_app_views_projects__list_html_erb__1113727691038375192_47053544435580'
+app/views/home/index.html.erb:5:in `_app_views_home_index_html_erb___4607687169453172021_47053544473420'
+Started GET "/" for ::1 at 2020-02-14 20:25:47 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ app/views/projects/_list.html.erb:28
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects" WHERE "projects"."tenant_id" = $1[0m  [["tenant_id", 4]]
+  ↳ app/models/tenant.rb:50
+  Rendered projects/_list.html.erb (11.7ms)
+  Rendered home/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 8.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `**' for "free":String
+Did you mean?  *):
+    65: 
+    66: </table>
+    67: 
+    68: <% if @tenant.can_add_projects? %>
+    69: 
+    70: 	<%= link_to 'New Project', new_tenant_project_path(tenant_id: @tenant.id),
+    71: 
+  
+app/models/tenant.rb:50:in `can_add_projects?'
+app/views/projects/_list.html.erb:68:in `_app_views_projects__list_html_erb__1113727691038375192_47053543843820'
+app/views/home/index.html.erb:5:in `_app_views_home_index_html_erb___4607687169453172021_47053544028460'
+Started GET "/" for ::1 at 2020-02-14 20:26:06 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:%
+  [1m[36mTenant Load (0.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mProject Load (0.4ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ app/views/projects/_list.html.erb:28
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects" WHERE "projects"."tenant_id" = $1[0m  [["tenant_id", 4]]
+  ↳ app/models/tenant.rb:50
+  Rendered projects/_list.html.erb (9.2ms)
+  Rendered home/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 329ms (Views: 295.4ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/" for ::1 at 2020-02-14 20:28:23 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE (users.tenant_id IS NULL) AND "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:5
+MILIA >>>>> [Tenant#change_tenant] new: 4	old:4
+  [1m[36mTenant Load (2.3ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /home/railsdata/.rvm/gems/ruby-2.4.6/bundler/gems/milia-05b72dd72bfa/lib/milia/base.rb:126
+  [1m[36mCACHE Tenant Load (0.0ms)[0m  [1m[34mSELECT  "tenants".* FROM "tenants" WHERE (tenants.tenant_id IS NULL) AND "tenants"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/models/project.rb:13
+  Rendering home/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2) subquery_for_count[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ app/views/projects/_list.html.erb:8
+  [1m[36mProject Load (0.5ms)[0m  [1m[34mSELECT  "projects".* FROM "projects" WHERE "projects"."tenant_id" = $1 ORDER BY "projects"."id" ASC LIMIT $2[0m  [["tenant_id", 4], ["LIMIT", 1]]
+  ↳ app/views/projects/_list.html.erb:30
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "projects" WHERE "projects"."tenant_id" = $1[0m  [["tenant_id", 4]]
+  ↳ app/models/tenant.rb:50
+  Rendered projects/_list.html.erb (29.1ms)
+  Rendered home/index.html.erb within layouts/application (33.9ms)
+Completed 200 OK in 149ms (Views: 127.6ms | ActiveRecord: 5.6ms)
+
+
